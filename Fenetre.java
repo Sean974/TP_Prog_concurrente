@@ -16,7 +16,7 @@ public class Fenetre extends JFrame implements ActionListener{
 	Timer t = new Timer(1000, new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			Temps.setText("Temps : "+String.valueOf(k)+"s");
-			/*if(flag == false)*/ k++;
+			k++;
 		}
 	});
 
@@ -26,7 +26,7 @@ public class Fenetre extends JFrame implements ActionListener{
 		conteneur.setLayout(new BorderLayout());
 		conteneur.add(pan);
 
-		//[gestion de la fermeture de la fenêtre
+		//[gestion de la fermeture de la fenÃªtre
 		fen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		fen.setTitle("Animation");
@@ -61,7 +61,7 @@ public class Fenetre extends JFrame implements ActionListener{
 		zone1.add(bt_retire);
 		zone1.add(bt_pause);
 
-		//[Ecoute des évènements
+		//[Ecoute des Ã©vÃ¨nements
 		bt_ajoute.addActionListener(this);
 		bt_retire.addActionListener(this);
 		bt_pause.addActionListener(this);
